@@ -7,9 +7,11 @@
       <link rel="stylesheet" href="style.css">
    </head>
    <body>
-      <iframe src="header.html" width="1500" height="625" ></iframe>      
+      <iframe src="header.html" width="1500" height="625"></iframe>
       <nav>
-         <h2><i><span>Sections</span></i></h2>
+         <h2>
+            <i><span>Sections</span></i>
+         </h2>
          <ol>
             <li><a href="index.html">Home</a></li>
             <li><a href="#media">Media</a></li>
@@ -30,9 +32,26 @@
             </video>
             <h4>Picture</h4>
             <figure>
-               <img src="geisel-small.jpg" alt="Geisel Library" >
-               <figcaption>This is the smaller Geisel page used for smaller devices and browsers.</figcaption>
+               <img src="geisel-small.jpg" alt="Geisel Library">
+               <figcaption>This is the smaller Geisel page used for smaller devices and answers.</figcaption>
             </figure>
+            <details>
+                <summary>Q: Who was the architect who designed UCSD's Geisel Library?</summary>
+                <p>A: William Pereira designed the Library's famous brutalist exterior.</p>
+            </details>
+            <br>
+            <form>
+                <label for="answer">What year was the library built?</label>
+                <input list="answers" name="answer" id="answer">
+                <datalist id="answers">
+                    <option value="1989">
+                    <option value="1952">
+                    <option value="1970">
+                    <option value="2000">
+                </datalist>
+            </form>
+            
+        
          </section>
          <section id="mathml">
             <h3>MathML</h3>
@@ -48,21 +67,23 @@
                   </msup>
                </mrow>
             </math>
-            <p>This was created with MathML, which was based on XML.
-               MathML is better for non-Web based applications, and was originally
-               supported only on FireFox with a very small proportion of supported browsers.
-               Only recently has the language become supported on all modern browsers, with
-               some serious limitations to this day.
+            <p>
+               This was created with MathML, which was based on XML. MathML is better for non-Web based applications, and was originally supported only on FireFox with a very small proportion of supported answers. Only recently has
+               the language become supported on all modern browsers, with some serious limitations to this day.
             </p>
+            <aside>Einstein's special theory of relativity states that the same laws of physics hold true in all inertial reference frames and that the speed of light is the same for all observers, even those moving with respect to one another.</aside>
+
          </section>
          <section id="data">
-            <h3>Data Showcase</h3>
+            <h3>Classes Taken</h3>
             <table>
-               <caption>A short overview of classes taken and skills learned.</caption>
+               <caption>
+                  A short overview of classes taken and skills learned.
+               </caption>
                <colgroup>
-                  <col style="background-color:skyblue">
-                  <col span="2" style="background-color:pink">
-                  <col style="background-color:yellow">
+                  <col style="background-color: skyblue;">
+                  <col span="2" style="background-color: pink;">
+                  <col style="background-color: yellow;">
                </colgroup>
                <tr>
                   <th>Class</th>
@@ -91,6 +112,6 @@
             </table>
          </section>
       </main>
-      <iframe src="footer.html" width="1500" height="220" ></iframe>   
+      <iframe src="footer.html" width="1500" height="220"></iframe>
    </body>
 </html>
