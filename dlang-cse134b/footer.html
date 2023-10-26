@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+   <head>
+      <meta charset="UTF-8">
+      <title>Footer Content</title>
+   </head>
+   <body>
+      <footer>
+         <hr>
+         <p>
+            Designed by <strong>Dennis Lang</strong><br>
+         </p>
+         <form>
+            <fieldset>
+               <legend>Feedback</legend>
+               <label for="name">Name:</label>
+               <input type="text" id="name" name="name" required>
+               <br>
+               <label for="email">Email:</label>
+               <input type="email" id="email" name="email" required>
+               <br>
+               <label for="comments">Comments:</label>
+               <textarea id="comments" name="comments" rows="5" cols="40"></textarea>
+               <br>
+               <label for="response-type">&nbsp;Response type:</label>
+               <select id="response-type">
+                  <optgroup label="Digital">
+                     <option value="Email">Email</option>
+                     <option value="Slack">Slack</option>
+                  </optgroup>
+                  <optgroup label="Analog">
+                     <option value="In-Person">In-Person</option>
+                     <option value="Phone Call">Phone Call</option>
+                  </optgroup>
+               </select>
+               <button type="submit">Submit</button>
+            </fieldset>
+         </form>
+         <canvas id="c1"></canvas>
+         <script>
+            let canvas = document.getElementById("c1");
+            let ctx = canvas.getContext("2d");
+            ctx.fillStyle = "#0000FF";
+            ctx.fillRect(0, 0, 10, 10);
+         </script>
+      </footer>
+   </body>
+</html>
